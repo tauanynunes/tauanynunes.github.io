@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+    <script src = script2.js></script>
+    <div class="topo">
+      <img src="img/logotipo.png">
+    </div>
+      <title>Registros - PA</title>
+</head>
+<body>
+  <main class="main-menu">
+  <input type="checkbox" id="bt_menu" />
+  <label for="bt_menu">&#9776;</label>
+<nav class="menu">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="desapar.html">Desaparecidos</a>
+              <ul>
+                  <li><a href="registre_d.html">Registre um Desaparecimento</a></li>
+                  <li><a href="lista_desap.html">Lista de Desaparecidos</a></li>
+              </ul>
+          </li>
+          <li><a href="conteudo.html">Conteudo</a>
+              <ul>
+                  <li><a href="relatos.html">Relatos</a></li>
+                  <li><a href="envierelato.html">Envie Seu Relato</a></li>
+                  <li><a href="noticias.html">Notícias</a></li>
+              </ul>
+          </li>
+          <li><a href="sobrenos.html">Sobre Nós</a>
+            <ul>
+          <li><a href="nossahistoria.html">Nossa História</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </li>
+          <li><a href="acesso.html">Acesso Restrito</a>
+            <ul>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </li>
+      </ul>
+  </nav>
+</main>
+
+<section class="hero-section">
+  <div class="card-grid-rel">
+    <a class="card-rel" href="#">
+      <div class="card__background" style="background-image: url(img/arm-reg1.png)"></div>
+      <div class="card__content">
+        <p class="card__category">REGISTRO DE DESAPARECIMENTO</p>
+        <h3 class="card__heading">AGATHA MARIA BERNARDES</h3>
+        <button id="btn-registro"> + </button>
+      </div>
+    </a>
+    <a class="card-rel" href="#">
+      <div class="card__background" style="background-image: url(img/arm-reg2.png)"></div>
+      <div class="card__content">
+        <p class="card__category">REGISTRO DE DESAPARECIMENTO</p>
+        <h3 class="card__heading">SANDRO EMANUEL BORGES</h3>
+        <button id="btn-registro"> + </button>
+      </div>
+    </a>
+    <a class="card-rel" href="#">
+      <div class="card__background" style="background-image: url(img/arm-reg3.png)"></div>
+      <div class="card__content">
+        <p class="card__category">REGISTRO DE DESAPARECIMENTO</p>
+        <h3 class="card__heading">AMÁLIA BJORGH</h3>
+        <input required type="button" id="btn-registro" onclick="readmore ()" value="+">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+      </div>
+    </li>
+    <a class="card-rel" href="#">
+      <div class="card__background" style="background-image: url(img/arm-reg4.png)"></div>
+      <div class="card__content">
+        <p class="card__category">REGISTRO DE DESAPARECIMENTO</p>
+        <h3 class="card__heading">ERICK EDUARDO GOMES</h3> 
+        <button id="btn-registro"> + </button>
+      </div>
+    </a>
+  <div>
+</section>
+</body>
+<!-- FOOTER  -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1 class="foot">Projeto Ajuda</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="index.html">Home</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1 class="foot">Desaparecidos</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="registre_d.html">Registre um Desaparecimento</a></li>
+      <li class="rod"><a class="rodape" href="lista_desap.html">Lista de Desaparecidos</a></li>
+  </ul>
+  </div>
+  <div class="col">
+    <h1 class="foot">Conteudo</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="relatos.html">Relatos</a></li>
+      <li class="rod"><a class="rodape" href="envierelato.html">Envie Seu Relato</a></li>
+      <li class="rod"><a class="rodape" href="noticias.html">Notícias</a></li>
+  </ul>
+  </div>
+  <div class="col">
+      <h1 class="foot">Sobre Nós</h1>
+      <ul class="lrod">
+          <li class="rod"><a class="rodape" href="nossahistoria.html">Nossa História</a></li>
+          <li class="rod"><a class="rodape" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  <div class="col">
+    <h1 class="foot">Acesso Restrito</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="acesso.html">Login</a>
+          <li class="rod"><a class="rodape" href="cadastro.html">Cadastro</a></li>
+      </ul>
+  </div>
+  <div class="col social">
+    <h1 class="foot">Social</h1>
+    <ul class="lrod">
+      <li class="rod"><a href="https://github.com/tauanynunes"><img src="img/github.png" width="32" style="width: 32px;"></a></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- FIM DO FOOTER -->
+</html>

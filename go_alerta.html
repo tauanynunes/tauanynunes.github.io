@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <div class="topo">
+      <img src="img/logotipo.png">
+    </div>
+    <title>ALERTA - PA</title>
+
+ <input type="checkbox" id="bt_menu" />
+  <label for="bt_menu">&#9776;</label>
+
+  <nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="desapar.html">Desaparecidos</a>
+            <ul>
+                <li><a href="registre_d.html">Registre um Desaparecimento</a></li>
+                <li><a href="lista_desap.html">Lista de Desaparecidos</a></li>
+            </ul>
+        </li>
+        <li><a href="conteudo.html">Conteudo</a>
+            <ul>
+                <li><a href="relatos.html">Relatos</a></li>
+                <li><a href="envierelato.html">Envie Seu Relato</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+            </ul>
+        </li>
+        <li><a href="sobrenos.html">Sobre Nós</a>
+          <ul>
+        <li><a href="nossahistoria.html">Nossa História</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </li>
+        <li><a href="acesso.html">Acesso Restrito</a>
+          <ul>
+              <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+      </li>
+    </ul>
+  </nav>
+</head>
+ <body>
+
+ <div class="container-alerta">
+  <header>Envie o Alerta</header>
+    <div class="progress-bar">
+      <div class="step">
+        <p>ID</p>
+          <div class="bullet">
+            <span>1</span></div>
+              <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>ID Desap</p>
+          <div class="bullet">
+            <span>2</span></div>
+              <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>Região</p>
+          <div class="bullet">
+            <span>3</span></div>
+              <div class="check fas fa-check"></div>
+      </div>
+
+      <div class="step">
+        <p>Acionar</p>
+          <div class="bullet">
+            <span>4</span></div>
+              <div class="check fas fa-check"></div>
+      </div>
+    </div>
+
+  <div class="form-outer">
+    <form action="#">
+      <div class="page slide-page">
+        <div class="title">Informações:</div>
+          <div class="field">
+            <div class="label">Nome Completo</div>
+              <input required type="text"></div>
+                <div class="field">
+                  <div class="label">Email</div>
+                    <input type="email"></div>
+                      <div class="field">
+                        <div class="label">Instituição</div>
+                          <input type="text"></div>
+                            <div class="field">
+                              <div required class="label">Código de Acesso</div>
+                                <input type="text"></div>
+                                  <div class="field">
+                                    <div class="label">Senha</div>
+                                      <input required type="password"></div>
+                    <div class="field">
+                <button class="firstNext next">Próximo</button>
+            </div>
+  </div>
+
+  <div class="page">
+    <div class="title">Informações Desaparecido</div>
+      <div class="field">
+        <div class="label">Nome Completo</div>
+          <input required type="text"></div>
+            <div class="field">
+              <div class="label">Idade</div>
+                <input type="Number"></div>
+                <div class="field">
+                  <div class="label">Caracteristícas: Físicas</div>
+                    <input type="text"></div>
+                      <div class="field">
+                        <div class="label">Caracteristícas: Vestimenta</div>
+                          <input type="text"></div> 
+                        <div class="field">
+                          <div class="label">Gênero</div>
+                            <select>
+                              <option>Selecione</option>
+                              <option>Feminino</option>
+                              <option>Masculino</option>
+                            <option>Outro</option>
+                          </select></div>
+                          <div class="field">
+                            <div class="label">Foto</div>
+                            <label class="label-arq" for="arquivo">Escolha o Arquivo</label></br>
+                              <input required type="file" name="arquivo" id="arquivo" accept=".jpg,.jpeg,.png,.doc"></div>
+                          
+                            </br>
+            <div class="field btns">
+              <button class="prev-1 prev">Voltar</button>
+              <button class="next-1 next">Próximo</button></div>
+  </div>
+
+  <div class="page">
+    <div class="title">Desaparecimento e Região</div>
+      <div class="field">
+        <div class="label">Data do Desaparecimento</div>
+          <input type="date"></div>
+            <div class="field">
+              <div class="label">Bairro do Desaparecimento</div>
+                <input type="text"></div>
+                  <div class="field">
+                    <div class="label">Cidade do Desaparecimento</div>
+                      <input type="text"></div>
+                      <div class="field">
+                        <div class="label"> Último local visto</div>
+                          <input type="text"></div>
+                            <div class="field">
+                              <div class="label">Descrição do Desaparecimento</div>
+                                <input type="text"></div>
+ 
+                              <div class="field btns">
+                              <button class="prev-2 prev">Voltar</button>
+                              <button class="next-2 next">Próximo</button></div>
+  </div>
+
+  <div class="page">
+    <div class="title">Informações de Contato e de Envio:</div>
+      <div class="field">
+        <div class="label">Telefone</div>
+          <input type="text"></div>
+            <div class="field">
+              <div class="label">Email</div>
+                <input type="text"></div>
+                <div class="field">
+                  <div class="label">Tramsmissor</div>
+                    <select>
+                      <option>SMS</option>
+                      <option>TV</option>
+                      <option>Rádio</option>
+                      <option>Outros</option>
+                    </select></div>
+                      <div class="field">
+                        <div class="label">Região de Envio</div>
+                          <input type="text"></div>
+          <div class="field btns">
+          <button class="prev-3 prev">Voltar</button>
+          <button class="submit">Enviar</button></div>
+  </div>
+
+ </form>
+ </div>
+ </div>
+ <script src="script2.js"></script>
+ </body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/b7a90d0458.js" crossorigin="anonymous"></script>
+    <div class="topo">
+    <img src="img/logotipo.png"></div>
+    <title>projetoajuda</title>
+    
+    
+  <input type="checkbox" id="bt_menu" />
+  <label for="bt_menu">&#9776;</label>
+
+  <nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="desapar.html">Desaparecidos</a>
+            <ul>
+                <li><a href="registre_d.html">Registre um Desaparecimento</a></li>
+                <li><a href="lista_desap.html">Lista de Desaparecidos</a></li>
+            </ul>
+        </li>
+        <li><a href="conteudo.html">Conteudo</a>
+            <ul>
+                <li><a href="relatos.html">Relatos</a></li>
+                <li><a href="envierelato.html">Envie Seu Relato</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+            </ul>
+        </li>
+        <li><a href="sobrenos.html">Sobre Nós</a>
+          <ul>
+        <li><a href="nossahistoria.html">Nossa História</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </li>
+        <li><a href="acesso.html">Acesso Restrito</a>
+          <ul>
+              <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+      </li>
+    </ul>
+  </nav>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a class="logo-a" href="#">PMSC</a>
+      <div class="search_box">
+        <input class="input-dash" type="text" placeholder="Procure">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <div class="header-icons">
+      <i class="fas fa-bell"></i>
+      <div class="account">
+        <a href="editarperfil.html"><img src="img/julie-id.png" alt=""></a>
+        <h4 class="name-dash">  Julie Andres</h4>
+      </div>
+    </div>
+  </header>
+  <div class="all-dash">
+  <div class="container-dash">
+    <nav>
+      <div class="side_navbar">
+        <span>Main Menu</span>
+        <a href="#" class="active">Dashboard</a>
+        <a href="go_alerta.html">Alertas</a>
+        <a href="arm_registro.html">Registros</a>
+        <a href="arm_relatos.html">Relatos</a>
+        <a href="editarperfil.html">Editar Perfil</a>
+        <a href="#">Minha Conta</a>
+
+        <div class="links">
+          <span>Links Rápidos</span>
+          <a href="#">Histórico</a>
+          <a href="#">Documentos</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-body">
+      <h2>Dashboard</h2>
+      <div class="promo_card">
+        <h1 class="titu-dash">Bem-vinda Sra. Andres</h1>
+        <span>Seja bem-vinda ao novo Dashboard da PM de Santa Catarina, gostaria de saber o que mudou?</span>
+        <button class="button-dash">Leia Mais</button>
+      </div>
+
+      <div class="history_lists">
+        <div class="list1">
+          <div class="row">
+            <h4>Histórico</h4>
+            <a href="#">See all</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Data</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>28, Ago, 2022</td>
+                <td>Janice e João Oliveira</td>
+                <td>Alerta</td>
+                <td>emitido</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>03, Set, 2022</td>
+                <td>Leandro Alves</td>
+                <td>Alerta</td>
+                <td>emitido</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>19, Set, 2022</td>
+                <td>Alanis K. Barbosa</td>
+                <td>Alerta</td>
+                <td>emitido</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>01, Out, 2022</td>
+                <td>Ericka Muller</td>
+                <td>Registro</td>
+                <td>cancelado*</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>19, Out, 2022</td>
+                <td>Ivanise Espiridião</td>
+                <td>Relato</td>
+                <td>atualizado</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>31, Out, 2022</td>
+                <td>Luz Cuevas</td>
+                <td>Relato</td>
+                <td>publicado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="list2">
+          <div class="row">
+            <h4>Documentos</h4>
+            <a href="#">Upload</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Titulo</th>
+                <th>Tipo</th>
+                <th>Uploaded</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>JJOliveira</td>
+                <td>Jpg</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>LeandroA</td>
+                <td>Jpeg</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>AlanisK</td>
+                <td>Png</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>ErickaM</td>
+                <td>Jpg</td>
+                <td>22</td>
+              </tr> 
+              <tr>
+                <td>5</td>
+                <td>R_Ivanise</td>
+                <td>PDF</td>
+                <td>22</td>
+              </tr> 
+              <tr>
+                <td>6</td>
+                <td>R_Luz</td>
+                <td>Word</td>
+                <td>22</td>
+              </tr> 
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h4>Contatos</h4>
+      
+      <div class="balance">
+        <i class="fa-solid fa-headset"></i>
+        <div class="info">
+          <h5>Edgar Biedermann</h5>
+          <span>Delegado - PRF</span>
+        </div>
+      </div>
+      
+      <div class="balance">
+        <i class="fa-solid fa-tower-cell"></i>
+        <div class="info">
+          <h5>Bruna Eduarda</h5>
+          <span>Comunicação - TORRESCEL</span>
+        </div>
+      </div>
+
+      <div class="balance">
+        <i class="fa-solid fa-hospital"></i>
+        <div class="info">
+          <h5>Samile Fernanda</h5>
+          <span>ENF - Hospital Marieta</span>
+        </div>
+      </div>
+
+      <div class="balance">
+        <i class="fa-solid fa-user-doctor"></i>
+        <div class="info">
+          <h5>Elias Ballman</h5>
+          <span>DR - Instituto Médico Legal</span>
+        </div>
+      </div>
+
+      <div class="balance">
+        <i class="fa-solid fa-user-gear"></i>
+        <div class="info">
+          <h5>Arthur Ferraz</h5>
+          <span>Suporte de TI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="body-chat">
+
+	<div id="live-chat">
+
+		<header class="clearfix">
+			<a href="#" class="chat-close">x</a>
+                <h4 class="name-chat">PMSC - Julie Andres</h4>
+                    <span class="chat-message-counter">3</span>
+        </header>
+		<div class="chat">
+			
+		<div class="chat-history">
+
+		<div class="chat-message clearfix">
+			<img class="img-chat" src="img/julie-id.png" alt="" width="32" height="32">
+				<div class="chat-message-content clearfix">
+					<span class="chat-time">13:35</span>
+						<h5 class="name-h5">PMSC - Julie Andres</h5>
+						    <p class="mess-chat">Boa tarde! Há um novo registro na região, o código é A79E45, podes verificar as informações?</p>
+			    </div> <!-- end chat-message-content -->
+            </div> <!-- end chat-message -->
+
+				<hr class="line-chat">
+
+		<div class="chat-message clearfix">
+			<img class="img-chat" src="img/Edgar-id.png" alt="" width="32" height="32">
+				<div class="chat-message-content clearfix">
+					<span class="chat-time">13:37</span>
+						<h5 class="name-h5">PRF - Edgar Biedermann</h5>
+						    <p class="mess-chat">Boa tarde Sra. Andres! Em breve retornarei com um relatório completo, só peço que envie o pedido formalmente via e-mail.</p>
+				</div> <!-- end chat-message-content -->
+			</div> <!-- end chat-message -->
+
+				<hr class="line-chat">
+
+		<div class="chat-message clearfix">
+			<img class="img-chat" src="img/julie-id.png" alt="" width="32" height="32">
+				<div class="chat-message-content clearfix">
+					<span class="chat-time">13:42</span>
+						<h5 class="name-h5">PMSC - Julie Andres</h5>
+						    <p class="mess-chat">Obrigado Dr. Edgar, o pedido foi efetuado! Aguardo o retorno.</p>
+					</div> <!-- end chat-message-content -->
+				</div> <!-- end chat-message -->
+
+				<hr class="line-chat">
+
+		</div> <!-- end chat-history -->
+
+			<p class="chat-feedback">PRF - Edgar Biedermann está digitando..</p>
+            	<form class="form-chat" action="#" method="post">
+                 	<fieldset>
+						<input class="input-chat" type="text" placeholder="Digite sua mensagem" autofocus>
+					    <input class="input-chat" type="hidden">
+                    </fieldset>
+                </form>
+		</div> <!-- end chat -->
+	</div> <!-- end live-chat -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</div>
+</body>
+<script src="scripteste.js"></script>
+<!-- FOOTER  -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1 class="foot">Projeto Ajuda</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="index.html">Home</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1 class="foot">Desaparecidos</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="registre_d.html">Registre um Desaparecimento</a></li>
+      <li class="rod"><a class="rodape" href="lista_desap.html">Lista de Desaparecidos</a></li>
+  </ul>
+  </div>
+  <div class="col">
+    <h1 class="foot">Conteudo</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="relatos.html">Relatos</a></li>
+      <li class="rod"><a class="rodape" href="envierelato.html">Envie Seu Relato</a></li>
+      <li class="rod"><a class="rodape" href="noticias.html">Notícias</a></li>
+  </ul>
+  </div>
+  <div class="col">
+      <h1 class="foot">Sobre Nós</h1>
+      <ul class="lrod">
+          <li class="rod"><a class="rodape" href="nossahistoria.html">Nossa História</a></li>
+          <li class="rod"><a class="rodape" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  <div class="col">
+    <h1 class="foot">Acesso Restrito</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="acesso.html">Login</a>
+          <li class="rod"><a class="rodape" href="cadastro.html">Cadastro</a></li>
+      </ul>
+  </div>
+  <div class="col social">
+    <h1 class="foot">Social</h1>
+    <ul class="lrod">
+      <li class="rod"><a href="https://github.com/tauanynunes"><img src="img/github.png" width="32" style="width: 32px;"></a></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- FIM DO FOOTER -->
+</html>

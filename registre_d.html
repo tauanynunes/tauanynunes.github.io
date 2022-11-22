@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/b7a90d0458.js" crossorigin="anonymous"></script>
+            <div class="topo">
+            <img src="img/logotipo.png"></div>
+            <title>projetoajuda</title>
+            
+            
+          <input type="checkbox" id="bt_menu" />
+          <label for="bt_menu">&#9776;</label>
+        
+          <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="desapar.html">Desaparecidos</a>
+                    <ul>
+                        <li><a href="registre_d.html">Registre um Desaparecimento</a></li>
+                        <li><a href="lista_desap.html">Lista de Desaparecidos</a></li>
+                    </ul>
+                </li>
+                <li><a href="conteudo.html">Conteudo</a>
+                    <ul>
+                        <li><a href="relatos.html">Relatos</a></li>
+                        <li><a href="envierelato.html">Envie Seu Relato</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobrenos.html">Sobre Nós</a>
+                  <ul>
+                <li><a href="nossahistoria.html">Nossa História</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                </ul>
+              </li>
+                <li><a href="acesso.html">Acesso Restrito</a>
+                  <ul>
+                      <li><a href="cadastro.html">Cadastro</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </nav>
+        </head>
+        <body>
+  <br/>
+  <section class="form-section">
+    <h1 class="titulo">REGISTRE O DESAPARECIMENTO</h1>
+
+    <div class="form-wrapper">
+        <form action="acesso.html" method="post">
+            <div class="input-block">
+                <label for="dados" class="Tdados">Dados Pessoais</label>  <br/>  <br/>
+                <label for="nome-cad">Nome</label>
+                <input required type="nome" id="nome-cad" />
+                <span class="error"></span>
+
+            </div>
+            <div class="input-block">
+                <label for="cargo-cad">CPF</label>
+                <input required type="number" id="cpf-cad" min="0" maxlength="14"/>
+                <span class="error"></span>
+            </div>
+            <div class="input-block">
+                <label for="inst-cad">Telefone </label>
+                <input required type="tel" id="tel-cad" />
+                <span class="error"></span>
+            </div>
+            <div class="input-block">
+                <label for="login-cad">Email</label>
+                <input required type="email" id="login-cad" />
+                <span class="error"></span>
+
+            </div>
+            <div class="input-block">
+                <label for="nasc-cad">Data de Nascimento</label>
+                <input required type="date" id="nasc-cad" />
+                <span class="error"></span>
+            </div>
+            <div class="input-block">
+                <label for="estado-cad">Estado</label>
+                <br/>
+                <br/>
+                <select name="estado-cad">
+                    <option value="ac">Acre</option> 
+                    <option value="al">Alagoas</option> 
+                    <option value="am">Amazonas</option> 
+                    <option value="ap">Amapá</option> 
+                    <option value="ba">Bahia</option> 
+                    <option value="ce">Ceará</option> 
+                    <option value="df">Distrito Federal</option> 
+                    <option value="es">Espírito Santo</option> 
+                    <option value="go">Goiás</option> 
+                    <option value="ma">Maranhão</option> 
+                    <option value="mt">Mato Grosso</option> 
+                    <option value="ms">Mato Grosso do Sul</option> 
+                    <option value="mg">Minas Gerais</option> 
+                    <option value="pa">Pará</option> 
+                    <option value="pb">Paraíba</option> 
+                    <option value="pr">Paraná</option> 
+                    <option value="pe">Pernambuco</option> 
+                    <option value="pi">Piauí</option> 
+                    <option value="rj">Rio de Janeiro</option> 
+                    <option value="rn">Rio Grande do Norte</option> 
+                    <option value="ro">Rondônia</option> 
+                    <option value="rs">Rio Grande do Sul</option> 
+                    <option value="rr">Roraima</option> 
+                    <option value="sc">Santa Catarina</option> 
+                    <option value="se">Sergipe</option> 
+                    <option value="sp">São Paulo</option> 
+                    <option value="to">Tocantins</option> 
+                </select>
+            </div>
+            <div class="input-block">
+                <label for="cidade-cad">Cidade</label>
+                <input required type="text" id="cidade-cad" />
+                <span class="error"></span>
+            
+            </div>
+<br/>
+<div class="input-block">
+    <label for="dados" class="Tdados">Dados do Desaparecido</label>  <br/>  <br/>
+    <label for="nomed-cad">Nome do Desaparecido</label>
+    <input required type="text" id="nomed-cad" />
+    <span class="error"></span>
+
+</div>
+<div class="input-block">
+    <label for="nomem-cad">Nome da Mãe</label>
+    <input required type="text" id="nomem-cad" />
+    <span class="error"></span>
+</div>
+<div class="input-block">
+    <label for="nomep-cad">Nome do Pai</label>
+    <input required type="text" id="nomep-cad" />
+    <span class="error"></span>
+</div>
+
+<div class="input-block">
+    <label for="inst-cad">Sexo</label>
+        <br/>
+        <select name="sexo-cad">
+            <option value="S">Selecione</option> 
+            <option value="F">Feminino</option> 
+            <option value="M">Masculino</option> 
+            <option value="O">Outro</option> 
+    <span class="error"></span>
+        </select>
+</div>
+
+    <div class="input-block">
+        <label for="grau-cad">Grau de Parentesco com o Desaparecido</label>
+        <input required type="text" id="grau-cad" />
+        <span class="error"></span>
+    </div>
+
+    <div class="input-block">
+        <label for="nasc-cad">Data de Nascimento</label>
+        <input required type="date" id="nasc-cad" />
+        <span class="error"></span>
+    </div>
+
+<div class="input-block">
+    <label for="desap-cad">Data do Desaparecimento</label>
+    <input required type="date" id="desap-cad" />
+    <span class="error"></span>
+</div>
+<div class="input-block">
+<label for="msg">Detalhes do Desaparecimento</label>
+<br/>
+<br/>
+	<textarea id="msg" name="msg" rows="6" cols="50"></textarea>
+    <span class="error"></span>
+    <br/>
+    <br/>
+    <div class="input-block">
+        <label for="img-desap">Imagem do Desaparecido</label>
+        <input required type="file" id="img-desap" accept=".jpg,.jpeg,.png,.doc"/>
+        <span class="error"></span>
+    </div>
+	<br/>
+    
+    <input required type="button" id="termos" value="Termos e Condições">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script>document.getElementById("termos").addEventListener("click", exibeMensagem);
+    function exibeMensagem() {
+        const { value: accept } =  Swal.fire({
+            title: 'Termos e Condições',
+            font: 'Poppins, sans-serif',
+            html: '</br> Você pode acessar os Termos e Condições ' + '<a href="//github.com">aqui</a></br> ',
+            input: 'checkbox',
+            inputValue: 1,
+            inputPlaceholder:
+            'Eu li e concordo com os Termos e Condições',
+            confirmButtonText:
+            'Continue <i class="fa fa-arrow-right"></i>',
+            inputValidator: (result) => {
+            return !result && 'Você precisa aceitar os Termos'
+        }
+    })
+
+    if (accept) {
+        Swal.fire('You agreed with T&C :)')}   
+    };</script>
+
+    <span class="error"></span>
+    </div>
+    </br>
+    <button type="submit" class="btn-login" >Registrar</button>
+        </form>
+    </div>
+    <br/>
+    
+</section>
+</br>
+</br>
+</br>
+</br>
+<script type="text/javascript" src="script.js"></script>
+</body>
+<!-- FOOTER  -->
+<div class="footer">
+    <div class="contain">
+    <div class="col">
+      <h1 class="foot">Projeto Ajuda</h1>
+      <ul class="lrod">
+        <li class="rod"><a class="rodape" href="index.html">Home</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1 class="foot">Desaparecidos</h1>
+      <ul class="lrod">
+        <li class="rod"><a class="rodape" href="registre_d.html">Registre um Desaparecimento</a></li>
+        <li class="rod"><a class="rodape" href="lista_desap.html">Lista de Desaparecidos</a></li>
+    </ul>
+    </div>
+    <div class="col">
+      <h1 class="foot">Conteudo</h1>
+      <ul class="lrod">
+        <li class="rod"><a class="rodape" href="relatos.html">Relatos</a></li>
+        <li class="rod"><a class="rodape" href="envierelato.html">Envie Seu Relato</a></li>
+        <li class="rod"><a class="rodape" href="noticias.html">Notícias</a></li>
+    </ul>
+    </div>
+    <div class="col">
+        <h1 class="foot">Sobre Nós</h1>
+        <ul class="lrod">
+            <li class="rod"><a class="rodape" href="nossahistoria.html">Nossa História</a></li>
+            <li class="rod"><a class="rodape" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    <div class="col">
+      <h1 class="foot">Acesso Restrito</h1>
+      <ul class="lrod">
+        <li class="rod"><a class="rodape" href="acesso.html">Login</a>
+            <li class="rod"><a class="rodape" href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </div>
+    <div class="col social">
+      <h1 class="foot">Social</h1>
+      <ul class="lrod">
+        <li class="rod"><a href="https://github.com/tauanynunes"><img src="img/github.png" width="32" style="width: 32px;"></a></li>
+      </ul>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  <!-- FIM DO FOOTER -->
+</html>

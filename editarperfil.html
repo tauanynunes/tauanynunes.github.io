@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripteste.js"></script>
+    <div class="topo">
+    <img src="img/logotipo.png"></div>
+    <title>projetoajuda</title>
+    
+    
+  <input type="checkbox" id="bt_menu" />
+  <label for="bt_menu">&#9776;</label>
+
+  <nav class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="desapar.html">Desaparecidos</a>
+            <ul>
+                <li><a href="registre_d.html">Registre um Desaparecimento</a></li>
+                <li><a href="lista_desap.html">Lista de Desaparecidos</a></li>
+            </ul>
+        </li>
+        <li><a href="conteudo.html">Conteudo</a>
+            <ul>
+                <li><a href="relatos.html">Relatos</a></li>
+                <li><a href="envierelato.html">Envie Seu Relato</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+            </ul>
+        </li>
+        <li><a href="sobrenos.html">Sobre Nós</a>
+          <ul>
+        <li><a href="nossahistoria.html">Nossa História</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </li>
+        <li><a href="acesso.html">Acesso Restrito</a>
+          <ul>
+              <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+      </li>
+    </ul>
+  </nav>
+</head>
+<body>
+    <main>
+        <div class="container-editp">
+          <div class="left box-primary">
+            <img class="image-perfil" src="img/editarfoto.png" alt="" />
+            <h3 class="username text-center">Julie Andres</h3>
+            <a href="#" class="btn btn-primary btn-block">
+                <b>Editar foto</b></a>
+        <span class="error"></span>
+          </div>
+          <div class="right tab-content">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputName" class="col-sm-2-control-label">Nome</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputName" placeholder="Nome">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail" class="col-sm-2-control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputSenha" class="col-sm-2-control-label">Senha</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputSenha2" class="col-sm-2-control-label">Repita sua Senha</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputSenha2" placeholder="Repetir senha">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class= "col-sm-12 has-feedback">
+                  <label for="" class="control-label">Entidade</label>
+                  <select title="Para escolher várias entidades, segure a tecla Ctrl" alt="Para escolher várias entidades, segure a tecla Ctrl" name="modalidades[]" class="form-control" multiple="">
+                    <option value="1">Policia Militar</option>
+                    <option value="2">Guarda Municipal</option>
+                    <option value="10">Policia Rodoviária Federal</option>
+                    <option value="3">Grupo de Atuação Especial de Combate ao Crime Organizado</option>
+                    <option value="5">Policia Civil</option>
+                    <option value="18">Polícia de Pessoas Desaparecidas</option>
+                    <option value="13">Secretária de Segurança Pública</option>
+                    <option value="14">Instituto Médico Legal</option>
+                    <option value="16">Delegacia - forma geral</option>
+                    <option value="19">Outros</option>
+                </select>
+                </div>
+              </div>
+                </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2-col-sm-10">
+                  <button type="submit" class="btn btn-danger">Salvar alterações</button>
+                </div>
+              </div>
+            </form>
+        </main>
+    </body>
+    <!-- FOOTER  -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1 class="foot">Projeto Ajuda</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="index.html">Home</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1 class="foot">Desaparecidos</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="registre_d.html">Registre um Desaparecimento</a></li>
+      <li class="rod"><a class="rodape" href="lista_desap.html">Lista de Desaparecidos</a></li>
+  </ul>
+  </div>
+  <div class="col">
+    <h1 class="foot">Conteudo</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="relatos.html">Relatos</a></li>
+      <li class="rod"><a class="rodape" href="envierelato.html">Envie Seu Relato</a></li>
+      <li class="rod"><a class="rodape" href="noticias.html">Notícias</a></li>
+  </ul>
+  </div>
+  <div class="col">
+      <h1 class="foot">Sobre Nós</h1>
+      <ul class="lrod">
+          <li class="rod"><a class="rodape" href="nossahistoria.html">Nossa História</a></li>
+          <li class="rod"><a class="rodape" href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  <div class="col">
+    <h1 class="foot">Acesso Restrito</h1>
+    <ul class="lrod">
+      <li class="rod"><a class="rodape" href="acesso.html">Login</a>
+          <li class="rod"><a class="rodape" href="cadastro.html">Cadastro</a></li>
+      </ul>
+  </div>
+  <div class="col social">
+    <h1 class="foot">Social</h1>
+    <ul class="lrod">
+      <li class="rod"><a href="https://github.com/tauanynunes"><img src="img/github.png" width="32" style="width: 32px;"></a></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- FIM DO FOOTER -->
+</html>
